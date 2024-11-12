@@ -1,0 +1,15 @@
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\Infraestructura\obj\Debug\net7.0\RestauranteBack.Infraestructura.csproj.AssemblyReference.cache
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\Infraestructura\obj\Debug\net7.0\RestauranteBack.Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\Infraestructura\obj\Debug\net7.0\RestauranteBack.Infraestructura.AssemblyInfoInputs.cache
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\Infraestructura\obj\Debug\net7.0\RestauranteBack.Infraestructura.AssemblyInfo.cs
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\Infraestructura\obj\Debug\net7.0\RestauranteBack.Infraestructura.csproj.CoreCompileInputs.cache
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\Infraestructura\bin\Debug\net7.0\RestauranteBack.Infraestructura.deps.json
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\Infraestructura\bin\Debug\net7.0\RestauranteBack.Infraestructura.dll
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\Infraestructura\bin\Debug\net7.0\RestauranteBack.Infraestructura.pdb
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\Infraestructura\bin\Debug\net7.0\RestauranteBack.Modelo.dll
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\Infraestructura\bin\Debug\net7.0\RestauranteBack.Modelo.pdb
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\Infraestructura\obj\Debug\net7.0\RestauranteBack.Infraestructura.csproj.CopyComplete
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\Infraestructura\obj\Debug\net7.0\RestauranteBack.Infraestructura.dll
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\Infraestructura\obj\Debug\net7.0\refint\RestauranteBack.Infraestructura.dll
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\Infraestructura\obj\Debug\net7.0\RestauranteBack.Infraestructura.pdb
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\Infraestructura\obj\Debug\net7.0\ref\RestauranteBack.Infraestructura.dll

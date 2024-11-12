@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\PROYECTO_UNIVERSIDAD\\restauranteBack\\WebApiRestaurante\\WebApiRestaurante.csproj": {}
+  },
+  "projects": {
+    "D:\\PROYECTO_UNIVERSIDAD\\restauranteBack\\WebApiRestaurante\\WebApiRestaurante.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\PROYECTO_UNIVERSIDAD\\restauranteBack\\WebApiRestaurante\\WebApiRestaurante.csproj",
+        "projectName": "WebApiRestaurante",
+        "projectPath": "D:\\PROYECTO_UNIVERSIDAD\\restauranteBack\\WebApiRestaurante\\WebApiRestaurante.csproj",
+        "packagesPath": "D:\\Users\\bjperez\\.nuget\\packages\\",
+        "outputPath": "D:\\PROYECTO_UNIVERSIDAD\\restauranteBack\\WebApiRestaurante\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "D:\\Users\\bjperez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://devops.comfenalco.com/Comfenalco/_packaging/Comfenalco/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

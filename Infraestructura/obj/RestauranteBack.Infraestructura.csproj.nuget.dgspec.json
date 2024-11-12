@@ -1,0 +1,156 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\PROYECTO_UNIVERSIDAD\\restauranteBack\\Infraestructura\\RestauranteBack.Infraestructura.csproj": {}
+  },
+  "projects": {
+    "D:\\PROYECTO_UNIVERSIDAD\\restauranteBack\\Aplicacion\\RestauranteBack.Modelo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\PROYECTO_UNIVERSIDAD\\restauranteBack\\Aplicacion\\RestauranteBack.Modelo.csproj",
+        "projectName": "RestauranteBack.Modelo",
+        "projectPath": "D:\\PROYECTO_UNIVERSIDAD\\restauranteBack\\Aplicacion\\RestauranteBack.Modelo.csproj",
+        "packagesPath": "D:\\Users\\bjperez\\.nuget\\packages\\",
+        "outputPath": "D:\\PROYECTO_UNIVERSIDAD\\restauranteBack\\Aplicacion\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "D:\\Users\\bjperez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://devops.comfenalco.com/Comfenalco/_packaging/Comfenalco/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\PROYECTO_UNIVERSIDAD\\restauranteBack\\Infraestructura\\RestauranteBack.Infraestructura.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\PROYECTO_UNIVERSIDAD\\restauranteBack\\Infraestructura\\RestauranteBack.Infraestructura.csproj",
+        "projectName": "RestauranteBack.Infraestructura",
+        "projectPath": "D:\\PROYECTO_UNIVERSIDAD\\restauranteBack\\Infraestructura\\RestauranteBack.Infraestructura.csproj",
+        "packagesPath": "D:\\Users\\bjperez\\.nuget\\packages\\",
+        "outputPath": "D:\\PROYECTO_UNIVERSIDAD\\restauranteBack\\Infraestructura\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "D:\\Users\\bjperez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://devops.comfenalco.com/Comfenalco/_packaging/Comfenalco/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\PROYECTO_UNIVERSIDAD\\restauranteBack\\Aplicacion\\RestauranteBack.Modelo.csproj": {
+                "projectPath": "D:\\PROYECTO_UNIVERSIDAD\\restauranteBack\\Aplicacion\\RestauranteBack.Modelo.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "BCrypt.Net-Core": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Portable.BouncyCastle": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
