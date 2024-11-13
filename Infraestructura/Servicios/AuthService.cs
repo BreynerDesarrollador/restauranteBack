@@ -130,7 +130,7 @@ namespace RestauranteBack.Infraestructura.Servicios
                 var userId = jwtToken.Claims.First(x => x.Type == "id").Value;
 
                 var usuario = await _usuarios.Find(u => u.Id == userId).FirstOrDefaultAsync();
-                if (usuario == null) throw new UnauthorizedAccessException();
+                if (usuario == null) throw new ExcepcionPeticionApi("El usuario no se encuentra autenticado", 400);
 
                 return new UsuarioDTO
                 {
@@ -139,9 +139,9 @@ namespace RestauranteBack.Infraestructura.Servicios
                     rol = usuario.rol
                 };
             }
-            catch
+            catch(ExcepcionPeticionApi ex)
             {
-                throw new UnauthorizedAccessException();
+                throw new ExcepcionPeticionApi(ex.Message, ex.CodigoError);
             }
         }
 

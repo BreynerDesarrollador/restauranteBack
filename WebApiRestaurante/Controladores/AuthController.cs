@@ -54,7 +54,10 @@ namespace RestauranteBack.WebApiRestaurante.Controladores
             {
                 var token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
                 var user = await _authService.VerifyTokenAsync(token);
-                return Ok(new { user });
+                return Ok(new RespuestaWebApi<object>
+                {
+                    data = user
+                });
             }
             catch (UnauthorizedAccessException)
             {
