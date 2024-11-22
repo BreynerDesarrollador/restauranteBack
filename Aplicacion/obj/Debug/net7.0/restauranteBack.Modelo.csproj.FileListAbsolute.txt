@@ -1,11 +1,11 @@
-D:\PROYECTO_UNIVERSIDAD\restauranteBack\Aplicacion\bin\Debug\net7.0\RestauranteBack.Modelo.deps.json
-D:\PROYECTO_UNIVERSIDAD\restauranteBack\Aplicacion\bin\Debug\net7.0\RestauranteBack.Modelo.dll
-D:\PROYECTO_UNIVERSIDAD\restauranteBack\Aplicacion\bin\Debug\net7.0\RestauranteBack.Modelo.pdb
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\Aplicacion\obj\Debug\net7.0\RestauranteBack.Modelo.csproj.AssemblyReference.cache
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\Aplicacion\obj\Debug\net7.0\RestauranteBack.Modelo.GeneratedMSBuildEditorConfig.editorconfig
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\Aplicacion\obj\Debug\net7.0\RestauranteBack.Modelo.AssemblyInfoInputs.cache
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\Aplicacion\obj\Debug\net7.0\RestauranteBack.Modelo.AssemblyInfo.cs
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\Aplicacion\obj\Debug\net7.0\RestauranteBack.Modelo.csproj.CoreCompileInputs.cache
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\Aplicacion\bin\Debug\net7.0\RestauranteBack.Modelo.deps.json
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\Aplicacion\bin\Debug\net7.0\RestauranteBack.Modelo.dll
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\Aplicacion\bin\Debug\net7.0\RestauranteBack.Modelo.pdb
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\Aplicacion\obj\Debug\net7.0\RestauranteBack.Modelo.dll
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\Aplicacion\obj\Debug\net7.0\refint\RestauranteBack.Modelo.dll
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\Aplicacion\obj\Debug\net7.0\RestauranteBack.Modelo.pdb

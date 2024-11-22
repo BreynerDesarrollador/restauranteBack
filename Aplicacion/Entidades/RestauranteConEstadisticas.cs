@@ -14,6 +14,7 @@ namespace RestauranteBack.Modelo.Entidades
         public string nombre { get; set; }
         public string descripcion { get; set; }
         public string categoria { get; set; }
+        public string imagenPrincipal { get; set; }
         public Horario horario { get; set; }
         public Ubicacion ubicacion { get; set; }
         public List<MenuItem> menu { get; set; }
@@ -21,6 +22,6 @@ namespace RestauranteBack.Modelo.Entidades
         public Caracteristicas caracteristicas { get; set; }
 
         // Campo adicional para estadísticas
-        public List<EstadisticaRestaurante> EstadisticasRestaurante { get; set; } = new ();
+        public List<EstadisticaRestaurante> EstadisticasRestaurante { get; set; } = new();
     }
 }

@@ -221,5 +221,22 @@ namespace RestauranteBack.WebApiRestaurante.Controladores
                 });
             }
         }
+        [HttpPut("{id}/imagenes")]
+        public async Task<IActionResult> ActualizarImagenes(string id, [FromBody] ActualizarImagenesRestauranteDto dto)
+        {
+            try
+            {
+                await _restauranteService.ActualizarImagenesAsync(id, dto);
+                return Ok(new RespuestaWebApi<object> { mensaje = "Imagenes actualizadas con exito" });
+            }
+            catch (ExcepcionPeticionApi ex)
+            {
+                return StatusCode(ex.CodigoError, new RespuestaWebApi<object>
+                {
+                    exito = false,
+                    mensaje = ex.Message
+                });
+            }
+        }
     }
 }

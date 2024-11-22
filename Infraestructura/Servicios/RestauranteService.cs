@@ -29,12 +29,12 @@ namespace RestauranteBack.Infraestructura.Servicios
         }
 
         // Método para crear un nuevo restaurante
-        /*public async Task<RestauranteDto> CrearRestauranteAsync(RestauranteDto restauranteDto)
+        public async Task<RestauranteDto> CrearRestauranteAsync(RestauranteDto restauranteDto)
         {
             var restaurante = MapearEntidad(restauranteDto);
             await _restaurantes.InsertOneAsync(restaurante);
             return MapToDto(restaurante);
-        }*/
+        }
 
         // Método para obtener todos los restaurantes
         public async Task<List<RestauranteDto>> ObtenerRestaurantesAsync(string buscar, string categoria, string ubicacion)
@@ -401,6 +401,32 @@ namespace RestauranteBack.Infraestructura.Servicios
                 throw new ExcepcionPeticionApi(ex.Message, ex.CodigoError);
             }
         }
+        public async Task ActualizarImagenesAsync(string restauranteId, ActualizarImagenesRestauranteDto dto)
+        {
+            // Obtener el restaurante de la base de datos
+            var restaurante = await ObtenerRestaurantePorIdAsync(restauranteId);
+
+            if (restaurante == null)
+            {
+                throw new Exception("Restaurante no encontrado");
+            }
+
+            // Actualizar imágenes
+            restaurante.imagenPrincipal = dto.imagenPrincipal;
+            //restaurante.imagenPrincipal = dto.imagenPrincipal;
+
+            // Guardar cambios
+            var datosRestaurante = await _restaurantes.Find(d => d._id == restauranteId)
+                .FirstOrDefaultAsync();
+
+            datosRestaurante.imagenPrincipal = "data:image/jpg;base64," + dto.imagenPrincipal;
+
+            await _restaurantes.ReplaceOneAsync(
+                d => d._id == restauranteId,
+                datosRestaurante,
+                new ReplaceOptions { IsUpsert = true }
+            );
+        }
         // Método para mapear DTO a entidad
         private RestauranteConEstadisticas MapearEntidad(RestauranteDto dto) => new RestauranteConEstadisticas
         {
@@ -432,6 +458,7 @@ namespace RestauranteBack.Infraestructura.Servicios
                 Disponible = menuItem.Disponible,
                 Imagen = menuItem.Imagen
             }),
+            imagenPrincipal = dto.imagenPrincipal,
             imagenes = dto.Imagenes,
             caracteristicas = new Caracteristicas
             {
@@ -476,6 +503,7 @@ namespace RestauranteBack.Infraestructura.Servicios
                     Disponible = menuItem.Disponible,
                     Imagen = menuItem.Imagen
                 }),
+                imagenPrincipal = entity.imagenPrincipal,
                 Imagenes = entity.imagenes,
                 Caracteristicas = new CaracteristicasDto
                 {

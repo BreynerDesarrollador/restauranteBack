@@ -13,6 +13,7 @@ namespace RestauranteBack.Modelo.DTO
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
         public string Categoria { get; set; }
+        public string imagenPrincipal { get; set; }
         public HorarioDto Horario { get; set; }
         public UbicacionDto Ubicacion { get; set; }
         public List<MenuItemDto> Menu { get; set; }

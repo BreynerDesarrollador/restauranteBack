@@ -13,6 +13,7 @@ D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\bin\Debug\net7.0\Resta
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\bin\Debug\net7.0\RestauranteBack.WebApiRestaurante.pdb
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\bin\Debug\net7.0\BCrypt.Net-Core.dll
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\bin\Debug\net7.0\DnsClient.dll
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\bin\Debug\net7.0\Microsoft.Bcl.TimeProvider.dll
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
@@ -24,6 +25,8 @@ D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\bin\Debug\net7.0\Micro
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\bin\Debug\net7.0\MongoDB.Bson.dll
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\bin\Debug\net7.0\MongoDB.Driver.dll
@@ -50,6 +53,3 @@ D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\obj\Debug\net7.0\refin
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\obj\Debug\net7.0\RestauranteBack.WebApiRestaurante.pdb
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\obj\Debug\net7.0\RestauranteBack.WebApiRestaurante.genruntimeconfig.cache
 D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\obj\Debug\net7.0\ref\RestauranteBack.WebApiRestaurante.dll
-D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
-D:\PROYECTO_UNIVERSIDAD\restauranteBack\WebApiRestaurante\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
