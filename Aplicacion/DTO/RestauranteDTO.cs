@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RestauranteBack.Modelo.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,14 @@ namespace RestauranteBack.Modelo.DTO
         public List<MenuItemDto> Menu { get; set; }
         public List<string> Imagenes { get; set; }
         public CaracteristicasDto Caracteristicas { get; set; }
+        public int ContadorVisitas { get; set; }
+        public double PromedioCalificacion { get; set; }
+        public int TotalResenas { get; set; }
+        public int TotalMeGusta { get; set; }
+        public int TotalNoMeGusta { get; set; }
+        public bool MeGusta { get; set; }
+        public bool NoMeGusta { get; set; }
+        public List<EstadisticaRestaurante> Estadisticas { get; set; } = new();
     }
 
     public class HorarioDto

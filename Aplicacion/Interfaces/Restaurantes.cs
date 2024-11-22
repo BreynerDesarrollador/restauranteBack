@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Reflection.PortableExecutable;
+using RestauranteBack.Modelo.Entidades;
 
 namespace RestauranteBack.Modelo.Interfaces
 {
@@ -36,6 +37,7 @@ namespace RestauranteBack.Modelo.Interfaces
 
         [BsonElement("caracteristicas")]
         public Caracteristicas Caracteristicas { get; set; }
+        public List<EstadisticaRestaurante> Estadisticas { get; set; } = new();
     }
     public class Horario
     {

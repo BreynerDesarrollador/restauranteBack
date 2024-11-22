@@ -15,7 +15,7 @@ namespace RestauranteBack.WebApiRestaurante.Controladores
     public class AuthController : ControllerBase
     {
         private readonly AuthService _authService;
-
+        
         public AuthController(AuthService authService)
         {
             _authService = authService;
@@ -140,7 +140,7 @@ namespace RestauranteBack.WebApiRestaurante.Controladores
         {
             try
             {
-                if (id != usuarioDto.Id)
+                if (id != usuarioDto._id)
                 {
                     return BadRequest(new RespuestaWebApi<object> { exito = false, mensaje = "ID del usuario no coincide" });
                 }

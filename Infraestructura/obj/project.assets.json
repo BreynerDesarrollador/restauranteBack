@@ -1392,6 +1392,7 @@
     "net7.0": [
       "BCrypt.Net-Core >= 1.6.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.0",
+      "MongoDB.Driver >= 3.0.0",
       "Portable.BouncyCastle >= 1.9.0",
       "RestauranteBack.Modelo >= 1.0.0",
       "System.IdentityModel.Tokens.Jwt >= 8.2.0"
@@ -1448,6 +1449,10 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[6.0.0, )"
+          },
+          "MongoDB.Driver": {
+            "target": "Package",
+            "version": "[3.0.0, )"
           },
           "Portable.BouncyCastle": {
             "target": "Package",

@@ -11,8 +11,8 @@ namespace RestauranteBack.Modelo.Common
     public abstract class BaseEntity
     {
         [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string? Id { get; set; }
+        [BsonRepresentation(BsonType.String)] // Cambiar a String explícitamente
+        public string _id { get; set; } = Guid.NewGuid().ToString();
 
         [BsonElement("createdAt")]
         [BsonDateTimeOptions(Kind = DateTimeKind.Utc)]

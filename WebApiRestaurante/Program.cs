@@ -59,6 +59,8 @@ builder.Services.AddCors(options =>
 // Servicio de Restaurante
 builder.Services.AddScoped<RestauranteService>();
 builder.Services.AddScoped<maestrosServicios>();
+builder.Services.AddScoped<ResenaServicio>();
+builder.Services.AddScoped<ValidacionSesionService>();
 builder.Services.AddScoped<MongoDBProvider>();
 
 // Registrar servicios
@@ -82,6 +84,7 @@ builder.Services.AddScoped(sp =>
 
 // Agrega controladores
 builder.Services.AddControllers();
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 

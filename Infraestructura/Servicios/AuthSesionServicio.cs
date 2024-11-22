@@ -39,7 +39,7 @@ namespace RestauranteBack.Infraestructura.Servicios
                 Token = token,
                 usuario = new UsuarioDTO
                 {
-                    Id = usuario.Id,
+                    _id = usuario._id,
                     usuario = usuario.usuario,
                     rol = usuario.rol
                 }
@@ -67,12 +67,12 @@ namespace RestauranteBack.Infraestructura.Servicios
                 var jwtToken = (JwtSecurityToken)validatedToken;
                 var userId = jwtToken.Claims.First(x => x.Type == "id").Value;
 
-                var usuario = await _mongoDBProvider.GetUsuariosCollection().Find(u => u.Id == userId).FirstOrDefaultAsync();
+                var usuario = await _mongoDBProvider.GetUsuariosCollection().Find(u => u._id == userId).FirstOrDefaultAsync();
                 if (usuario == null) throw new UnauthorizedAccessException();
 
                 return new UsuarioDTO
                 {
-                    Id = usuario.Id,
+                    _id = usuario._id,
                     usuario = usuario.usuario,
                     rol = usuario.rol
                 };
@@ -91,7 +91,7 @@ namespace RestauranteBack.Infraestructura.Servicios
             {
                 Subject = new ClaimsIdentity(new[]
                 {
-                new Claim("id", user.Id),
+                new Claim("id", user._id),
                 new Claim(ClaimTypes.Name, user.usuario),
                 new Claim(ClaimTypes.Role, user.rol)
             }),

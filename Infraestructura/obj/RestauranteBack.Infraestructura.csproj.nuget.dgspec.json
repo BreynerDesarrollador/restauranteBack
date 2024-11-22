@@ -123,6 +123,10 @@
               "target": "Package",
               "version": "[6.0.0, )"
             },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Portable.BouncyCastle": {
               "target": "Package",
               "version": "[1.9.0, )"

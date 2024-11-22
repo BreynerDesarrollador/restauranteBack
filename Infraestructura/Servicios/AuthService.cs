@@ -58,7 +58,7 @@ namespace RestauranteBack.Infraestructura.Servicios
 
         public async Task<UsuarioDTO> GetUserByIdAsync(string id)
         {
-            var usuario = await _usuarios.Find(u => u.Id == id).FirstOrDefaultAsync();
+            var usuario = await _usuarios.Find(u => u._id == id).FirstOrDefaultAsync();
             if (usuario == null) return null;
             return new UsuarioDTO
             {
@@ -68,7 +68,7 @@ namespace RestauranteBack.Infraestructura.Servicios
 
         public async Task<bool> UpdateUserAsync(string id, UsuarioDTO usuarioDto)
         {
-            var updateResult = await _usuarios.ReplaceOneAsync(u => u.Id == id, new Usuario
+            var updateResult = await _usuarios.ReplaceOneAsync(u => u._id == id, new Usuario
             {
                 // Asigna las propiedades del DTO al modelo
             });
@@ -77,7 +77,7 @@ namespace RestauranteBack.Infraestructura.Servicios
 
         public async Task<bool> DeleteUserAsync(string id)
         {
-            var deleteResult = await _usuarios.DeleteOneAsync(u => u.Id == id);
+            var deleteResult = await _usuarios.DeleteOneAsync(u => u._id == id);
             return deleteResult.IsAcknowledged && deleteResult.DeletedCount > 0;
         }
         public async Task<InicioSesionRespuestaDto> LoginAsync(InicioSesionDto loginDto)
@@ -96,7 +96,7 @@ namespace RestauranteBack.Infraestructura.Servicios
                     Token = token,
                     usuario = new UsuarioDTO
                     {
-                        Id = usuario.Id,
+                        _id = usuario._id,
                         usuario = usuario.usuario,
                         rol = usuario.rol
                     }
@@ -129,12 +129,12 @@ namespace RestauranteBack.Infraestructura.Servicios
                 var jwtToken = (JwtSecurityToken)validatedToken;
                 var userId = jwtToken.Claims.First(x => x.Type == "id").Value;
 
-                var usuario = await _usuarios.Find(u => u.Id == userId).FirstOrDefaultAsync();
+                var usuario = await _usuarios.Find(u => u._id == userId).FirstOrDefaultAsync();
                 if (usuario == null) throw new ExcepcionPeticionApi("El usuario no se encuentra autenticado", 400);
 
                 return new UsuarioDTO
                 {
-                    Id = usuario.Id,
+                    _id = usuario._id,
                     usuario = usuario.usuario,
                     rol = usuario.rol
                 };
@@ -155,7 +155,7 @@ namespace RestauranteBack.Infraestructura.Servicios
                 {
                     Subject = new ClaimsIdentity(new[]
                     {
-                new Claim("id", user.Id),
+                new Claim("id", user._id),
                 new Claim("usuario", user.usuario),
                 new Claim("rol", user.rol),
                 new Claim("nombre", user?.nombre),
